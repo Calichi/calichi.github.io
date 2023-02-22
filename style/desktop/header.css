@@ -1,0 +1,14 @@
+header {
+  display: grid;
+  grid-template-areas: "one two";
+  grid-template-rows: auto;
+  grid-template-columns: 9fr 1fr;
+
+  background: var(--theme-25-percent);
+
+  padding: 2em
+}
+
+header .code-button {
+  grid-area: two;
+}

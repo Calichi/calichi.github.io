@@ -1,0 +1,22 @@
+main .landing {
+  display: grid;
+  grid-template-areas: "photo description"
+                       "skills skills";
+  grid-template-rows: auto auto;
+  grid-template-columns: 3fr 7fr;
+  column-gap: 5rem;
+  row-gap: 5rem;
+}
+
+main .landing .photo {
+  grid-area: photo;
+  align-self: center;
+}
+
+main .landing .description {
+  grid-area: description;
+}
+
+main .landing .skills {
+  grid-area: skills;
+}

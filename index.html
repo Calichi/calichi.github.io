@@ -5,13 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carlos Hernández</title>
+
+    <script type="module" src="./src/launcher.mjs"></script>
+    <link rel="stylesheet" href="./style/launcher.css">
+
   </head>
 
   <body>
+
     <header>
-      <h1>Sitio web personal</h1>
-      <h3>Carlos Hernández Alarcón</h3>
+
+      <a href="" class="rounded-button code-button">Código</a>
+
     </header>
+
+    <main>
+
+      <section class="landing">
+
+        <picture class="photo">
+          <img src="./img/photo.png" alt="Foto de perfil de Carlos Hernández" width="273" height="273">
+        </picture>
+
+        <article class="description">
+          <h1 class="title">Hola mi nombre es <mark class="propername">Carlos Hernández<mark></h1>
+          <span class="content">
+            <p>
+              Me describo como un <mark class="activity">desarrollador web junior</mark> especializado en <mark class="activity">front-end</mark>, con una experiencia de 8 meses en el uso de tecnologías como <mark class="html">HTML</mark>, <mark class="css">CSS</mark>, <mark class="javascript">JavaScript</mark> y <mark class="technology react">React</mark> para el desarrollo de páginas web. Durante este tiempo, he utilizado herramientas como <mark class="tool">Trello</mark> y <mark class="tool">Figma</mark> para la planificación, organización y diseño de proyectos, aplicando la metodología de gestión visual <mark class="tool">Kanban</mark> para el seguimiento y desarrollo de mis proyectos.
+            </p>
+            <p>
+            Además, he colaborado con compañeros del rubro, lo que me ha permitido mejorar mis habilidades de comunicación y cooperación en equipo. Me considero una persona comprometida y apasionada por el desarrollo web, siempre dispuesto a aprender nuevas tecnologías y mantenerme actualizado en el campo.
+            </p>
+            <p>
+            En mi tiempo libre, disfruto de jugar fútbol con amigos y familiares. Estoy entusiasmado por encontrar una oportunidad que me permita continuar desarrollando mis habilidades y generar experiencia en el ámbito de desarrollo web.
+            </p>
+          </span>
+        </article>
+
+        <section class="skills">
+
+          <h1 class="title">Hard skills</h1>
+
+          <ul class="items">
+
+            <li>
+              <skill-icon src="/img/ico-html.svg" class="item"/>
+            </li>
+
+            <li>
+              <skill-icon src="/img/ico-css.svg" class="item"/>
+            </li>
+
+            <li>
+              <skill-icon src="/img/ico-js.svg" class="item"/>
+            </li>
+
+            <li>
+              <skill-icon src="/img/ico-git.svg" class="item"/>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </section>
+
+    </main>
+
   </body>
 
 </html>

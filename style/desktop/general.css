@@ -1,0 +1,17 @@
+:root {
+  background: var(--theme-95-percent);
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  padding: 3rem 5rem;
+}
+
+.title {
+  font-family: 'Roboto Black';
+  color: var(--theme-05-percent);
+  font-size: 2rem;
+}

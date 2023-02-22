@@ -1,0 +1,15 @@
+@import './theme.css';
+@import './text-formatting.css';
+@import './desktop/general.css';
+@import './common/rounded-button.css';
+
+/* Estilos aplicados al encabezado */
+
+@import './desktop/header.css';
+
+/* Estilos aplicados a la sección presentación("landing") */
+
+@import './desktop/landing.css';
+@import './desktop/landing/photo.css';
+@import './desktop/landing/description.css';
+@import './desktop/landing/skills.css';

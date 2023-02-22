@@ -1,0 +1,18 @@
+.rounded-button {
+  background: var(--theme-50-percent);
+  color: var(--theme-95-percent);
+
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25em;
+  display: inline-block;
+  transition: all 500ms;
+  justify-self: center;
+  box-shadow: 2px 2px 5px var(--theme-05-percent);
+}
+
+.rounded-button:hover {
+  background: var(--theme-75-percent);
+  transform: scale(1.1);
+}

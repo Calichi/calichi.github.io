@@ -20,3 +20,14 @@ main .landing .description {
 main .landing .skills {
   grid-area: skills;
 }
+
+@media screen and (max-width: 480px) {
+
+  main .landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+}

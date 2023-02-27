@@ -2,7 +2,6 @@
 main .landing .skills {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
 }
 
 main .landing .skills .title {
@@ -13,6 +12,12 @@ main .landing .skills .items {
   display: flex;
   justify-content: center;
   list-style: none;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+main .landing .skills .items .item {
+  display: inline-block;
   height: 5rem;
-  gap: 3rem;
 }

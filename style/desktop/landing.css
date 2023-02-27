@@ -23,6 +23,14 @@ main .landing .skills {
 
 @media screen and (max-width: 480px) {
 
+  :root {
+    font-size: 14px;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
   main .landing {
     display: flex;
     flex-direction: column;

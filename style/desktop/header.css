@@ -6,7 +6,10 @@ header {
 
   background: var(--theme-25-percent);
 
-  padding: 2em
+  padding: 2em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 header .code-button {

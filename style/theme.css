@@ -1,6 +1,6 @@
 :root {
-  --hue: 0;
-  --sat: 100%;
+  --hue: 100;
+  --sat: 45%;
 
   --theme-05-percent: hsl(var(--hue), var(--sat), 5%);
   --theme-25-percent: hsl(var(--hue), var(--sat), 25%);

@@ -3,8 +3,10 @@
   --sat: 45%;
 
   --theme-05-percent: hsl(var(--hue), var(--sat), 5%);
+  --theme-15-percent: hsl(var(--hue), var(--sat), 15%);
   --theme-25-percent: hsl(var(--hue), var(--sat), 25%);
   --theme-50-percent: hsl(var(--hue), var(--sat), 50%);
   --theme-75-percent: hsl(var(--hue), var(--sat), 75%);
+  --theme-85-percent: hsl(var(--hue), var(--sat), 85%);
   --theme-95-percent: hsl(var(--hue), var(--sat), 95%);
 }

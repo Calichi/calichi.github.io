@@ -1,15 +1,7 @@
-@import './theme.css';
-@import './text-formatting.css';
-@import './desktop/general.css';
+@import './common/theme.css';
+@import './common/text-formatting.css';
 @import './common/rounded-button.css';
+@import './common/header.css';
 
-/* Estilos aplicados al encabezado */
-
-@import './desktop/header.css';
-
-/* Estilos aplicados a la sección presentación("landing") */
-
-@import './desktop/landing.css';
-@import './desktop/landing/photo.css';
-@import './desktop/landing/description.css';
-@import './desktop/landing/skills.css';
+@import './mobile/launcher.css' screen and (max-width: 991px);
+@import './desktop/launcher.css' screen and (min-width: 992px);

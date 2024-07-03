@@ -3,15 +3,27 @@ header {
   grid-template-areas: "one two";
   grid-template-rows: auto;
   grid-template-columns: 9fr 1fr;
-
-  background: var(--theme-25-percent);
+  width: 100%;
 
   padding: 2em;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  position: fixed;
 }
 
 header .code-button {
   grid-area: two;
+}
+
+header > nav
+{
+  grid-area: one;
+}
+
+header > nav > ul > li
+{
+  float: left;
+}
+
+header > nav > ul > li > a
+{
+  padding: 10px 25px;
 }

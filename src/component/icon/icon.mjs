@@ -1,6 +1,6 @@
 'use strict';
 
-class SkillIcon extends HTMLElement {
+class Icon extends HTMLElement {
 
   constructor() {
     super();
@@ -18,4 +18,4 @@ class SkillIcon extends HTMLElement {
 
 }
 
-export { SkillIcon };
+export { Icon as Icon };

@@ -1,14 +1,14 @@
 
-main .landing .skills {
+main #know-me .skills {
   display: flex;
   flex-direction: column;
 }
 
-main .landing .skills .title {
+main #know-me .skills .title {
   text-align: center;
 }
 
-main .landing .skills .items {
+main #know-me .skills .items {
   display: flex;
   justify-content: center;
   list-style: none;
@@ -17,7 +17,7 @@ main .landing .skills .items {
   padding: 0;
 }
 
-main .landing .skills .items .item {
+main #know-me .skills .items .item {
   display: inline-block;
   height: 5rem;
 }

@@ -1,0 +1,6 @@
+@import './general.css';
+@import './header.css';
+@import './know-me.css';
+@import './know-me/photo.css';
+@import './know-me/description.css';
+@import './know-me/skills.css';

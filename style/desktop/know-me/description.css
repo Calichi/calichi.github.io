@@ -1,0 +1,7 @@
+main #know-me .description .title {
+  text-align: right;
+}
+
+main #know-me .description .content {
+  text-align: justify;
+}

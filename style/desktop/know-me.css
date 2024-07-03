@@ -1,23 +1,29 @@
-main .landing {
+main #know-me {
   display: grid;
-  grid-template-areas: "photo description"
+  grid-template-areas: "header header"
+                       "photo description"
                        "skills skills";
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto;
   grid-template-columns: 3fr 7fr;
   column-gap: 5rem;
   row-gap: 5rem;
 }
 
-main .landing .photo {
+#know-me > h2
+{
+  grid-area: header;
+}
+
+main #know-me .photo {
   grid-area: photo;
   align-self: center;
 }
 
-main .landing .description {
+main #know-me .description {
   grid-area: description;
 }
 
-main .landing .skills {
+main #know-me .skills {
   grid-area: skills;
 }
 
@@ -31,7 +37,7 @@ main .landing .skills {
     padding: 1rem;
   }
 
-  main .landing {
+  main #know-me {
     display: flex;
     flex-direction: column;
     align-items: center;

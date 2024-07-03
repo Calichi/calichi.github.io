@@ -1,5 +1,5 @@
 :root {
-  background: var(--theme-95-percent);
+  background: var(--theme-85-percent);
 }
 
 body {
@@ -8,6 +8,11 @@ body {
 
 main {
   padding: 3rem 5rem;
+}
+
+section
+{
+  margin-top: 100px;
 }
 
 .title {

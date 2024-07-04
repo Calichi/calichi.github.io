@@ -13,7 +13,7 @@ header
 {
     display: flex;
     flex-direction: row;
-    background-color: var(--theme-15-percent);
+    background-color: var(--theme-35-percent);
     align-items: center;
 }
 

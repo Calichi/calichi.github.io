@@ -8,11 +8,11 @@ header > nav > ul
 header > nav a
 {
     text-decoration: none;
-    color: var(--theme-85-percent);
+    color: var(--theme-95-percent);
     font-weight: bold;
 }
 
 header > nav a:hover
 {
-    background-color: var(--theme-25-percent);
+    background-color: var(--theme-45-percent);
 }

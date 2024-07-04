@@ -7,6 +7,7 @@ body
 
 header
 {
+    background-color: transparent;
     grid-area: 'header';
     top: 0;
     position: fixed;

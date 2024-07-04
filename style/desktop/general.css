@@ -2,10 +2,6 @@
   background: var(--theme-85-percent);
 }
 
-body {
-  margin: 0;
-}
-
 main {
   padding: 3rem 5rem;
 }

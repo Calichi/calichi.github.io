@@ -1,4 +1,5 @@
 @import './common/theme.css';
+@import './common/general.css';
 @import './common/text-formatting.css';
 @import './common/rounded-button.css';
 @import './common/header.css';

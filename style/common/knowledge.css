@@ -1,0 +1,13 @@
+main #knowledges .items {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  
+  main #knowledges .items .item {
+    display: inline-block;
+    height: 5rem;
+  }

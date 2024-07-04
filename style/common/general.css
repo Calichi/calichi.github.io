@@ -1,3 +1,8 @@
+:root
+{
+    background: var(--theme-85-percent);
+}
+
 body
 {
     margin: 0;
@@ -10,4 +15,9 @@ header
     flex-direction: row;
     background-color: var(--theme-15-percent);
     align-items: center;
+}
+
+section:not(#know-me)
+{
+  margin-top: 100px;
 }

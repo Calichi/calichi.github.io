@@ -25,3 +25,18 @@ mark {
   background: none;
   color: var(--theme-25-percent);
 }
+
+.title
+{
+  font-family: 'Roboto Black';
+  color: var(--theme-05-percent);
+  font-size: 2rem;
+}
+
+main #know-me .description .title {
+  text-align: right;
+}
+
+main #know-me .description .content {
+  text-align: justify;
+}

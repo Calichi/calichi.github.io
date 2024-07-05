@@ -64,6 +64,12 @@ header
 main
 {
     grid-area: 'main';
+    /* padding-left: 25px;
+    padding-right: 15px; */
+}
+
+section
+{
     padding-left: 25px;
     padding-right: 15px;
 }
@@ -75,7 +81,7 @@ section:not(#know-me)
 
 section > .title
 {
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }
 
 a
@@ -87,6 +93,7 @@ ul
 {
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
 /* COMMON TEXT FORMATTING */
@@ -96,6 +103,7 @@ ul
     display: inline-block;
     font-family: 'Roboto Black';
     color: var(--theme-15-percent);
+    text-shadow: 0px 0px 0.1rem var(--theme-15-percent);
 }
 
 .emphasis-predicate
@@ -103,6 +111,7 @@ ul
     display: inline-block;
     font-family: 'Roboto Black';
     color: var(--theme-25-percent);
+    text-shadow: 0px 0px 0.1rem var(--theme-25-percent);
 }
 
 .label-subject
@@ -113,6 +122,7 @@ ul
     font-family: 'Roboto Black';
     background-color: var(--theme-65-percent);
     box-shadow: 0px 0px 5px var(--theme-35-percent);
+    text-shadow: 0px 0px 0.1rem var(--theme-35-percent);
     color: var(--theme-15-percent);
     border-radius: 0.50rem;
     padding: 4px 10px;
@@ -122,6 +132,8 @@ ul
 {
     font-family: 'Roboto Black';
     color: var(--theme-05-percent);
+    text-align: center;
+    text-shadow: 0px 0px 0.2rem var(--theme-25-percent);
     font-size: 3rem;
 }
 
@@ -231,7 +243,8 @@ header #navigation-panel .item:hover
 {
     text-align: end;
     font-family: "Roboto light";
-    font-size: 0.9rem;
+    font-size: 1rem;
+    text-shadow: none;
 }
 
 /* KNOWLEDGE */
@@ -279,6 +292,7 @@ main #knowledges .items .item {
     font-family: "Roboto light";
     font-size: 1.25rem;
     text-align: right;
+    text-shadow: none;
 }
 
 /* CONTACT-ME */
@@ -286,6 +300,12 @@ main #knowledges .items .item {
 #contact-me
 {
     margin-bottom: 100px;
+    padding: 0;
+}
+
+#contact-me .title
+{
+    margin-left: 25px
 }
 
 .contacts

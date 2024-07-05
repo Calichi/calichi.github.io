@@ -295,6 +295,42 @@ main #knowledges .items .item {
     text-shadow: none;
 }
 
+/* KNOWLEDGES */
+
+#knowledges .panel
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#knowledges .group
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: var(--theme-75-percent);
+    padding: 40px;
+    border-radius: 0.5rem;
+    box-shadow: inset 0px 0px 5px var(--theme-45-percent);
+}
+
+#knowledges .group:not(:last-child)
+{
+    margin-bottom: 50px;
+}
+
+.knowledge
+{
+    margin-left: 10px;
+    padding: 6px 12px;
+    border-radius: 0.5rem;
+    color: var(--theme-85-percent);
+    background-color: var(--theme-15-percent);
+    text-shadow: 0 0 0.15rem var(--theme-95-percent);
+    box-shadow: 0 0 0.2rem var(--theme-15-percent);
+}
+
 /* CONTACT-ME */
 
 #contact-me

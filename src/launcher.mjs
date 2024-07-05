@@ -4,10 +4,9 @@ import { Icon } from './component/icon/icon.mjs';
 
 customElements.define('ahc-icon', Icon);
 
-let header = document.getElementById('menu');
-let menuNavigation = document.getElementById('menu-navigation');
-let buttonCloseMenu = document.getElementById('close-menu');
-let buttonOpenMenu = document.getElementById('open-menu');
+let menuNavigation = document.getElementById('navigation-panel');
+let buttonCloseMenu = document.getElementById('hidden-button');
+let buttonOpenMenu = document.getElementById('show-button');
 
 buttonOpenMenu.addEventListener('click', (event) => {
     event.stopImmediatePropagation();

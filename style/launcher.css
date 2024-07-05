@@ -75,7 +75,18 @@ section:not(#know-me)
 
 section > .title
 {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+ul
+{
+    list-style: none;
+    margin: 0;
 }
 
 /* COMMON TEXT FORMATTING */
@@ -114,14 +125,6 @@ section > .title
     font-size: 3rem;
 }
 
-main #know-me .description .title {
-    text-align: right;
-}
-
-main #know-me .description .content {
-    text-align: justify;
-}
-
 /* COMMON ROUNDED BUTTON */
 
 .rounded-button
@@ -147,14 +150,14 @@ main #know-me .description .content {
 
 /* HEADER */
 
-header > div
+header .visibility-buttons
 {
     display: grid;
     margin-right: 10px;
     padding: 0;
 }
 
-header > div > button
+header .visibility-buttons .button
 {
     background-color: transparent;
     border: none;
@@ -163,29 +166,23 @@ header > div > button
     grid-area: 1/1;
 }
 
-header #close-menu
+header #hidden-button
 {
     display: none;
     margin-left: 5px;
 }
 
-header > nav
+header #navigation-panel
 {
     display: none;
-    background-color: var(--theme-25-percent);
-    border-radius: 1rem;
-    box-shadow: 0px 0px 10px var(--theme-05-percent);
+    flex-direction: column;
     padding: 20px;
+    border-radius: 1rem;
+    background-color: var(--theme-25-percent);
+    box-shadow: 0px 0px 10px var(--theme-05-percent);
 }
 
-header > nav > ul
-{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-header > nav a
+header #navigation-panel .item
 {
     display: block;
     text-decoration: none;
@@ -197,7 +194,7 @@ header > nav a
     margin-bottom: 5px;
 }
 
-header > nav a:hover
+header #navigation-panel .item:hover
 {
     background-color: var(--theme-45-percent);
 }
@@ -217,18 +214,22 @@ header > nav a:hover
 
 #know-me > .description h1
 {
+    display: block;
     text-align: right;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
 }
 
 #know-me > .description h2
 {
+    display: block;
     text-align: center;
     margin-bottom: 40px;
 }
 
 #know-me > .description p
 {
+    text-align: end;
     font-family: "Roboto light";
     font-size: 0.9rem;
 }
@@ -278,6 +279,34 @@ main #knowledges .items .item {
     font-family: "Roboto light";
     font-size: 1.25rem;
     text-align: right;
+}
+
+/* CONTACT-ME */
+
+#contact-me
+{
+    margin-bottom: 100px;
+}
+
+.contacts
+{
+    display: flex;
+    justify-content: center;
+}
+
+.contacts .media
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vmin;
+}
+
+.contacts .media .caption
+{
+    font-family: "Roboto Black";
+    color: var(--theme-15-percent);
+    font-size: 1.5rem;
 }
 
 /* @import './desktop/launcher.css' screen and (min-width: 992px); */

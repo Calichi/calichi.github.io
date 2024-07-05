@@ -14,26 +14,26 @@
 
   <body>
 
-    <header id="menu">
+    <header>
 
       <!-- <a href="https://github.com/Calichi/calichi.github.io" class="rounded-button code-button">Código</a> -->
       
-      <div>
-        <button id="close-menu">
+      <div class="visibility-buttons">
+        <button id="hidden-button" class="button">
           <ahc-icon src="/img/ico-back.svg" class="icon"/>
         </button>
-        <button id="open-menu" >
+        <button id="show-button" class="button">
           <ahc-icon src="/img/ico-menu.svg" class="icon"/>
         </button>
       </div>
 
-      <nav id="menu-navigation">
-        <ul>
-          <li><a href="#know-me">Conóceme</a></li>
-          <li><a href="#knowledges">Conocimientos</a></li>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="#activities">Actividades</a></li>
-          <li><a href="#contact-me">Contacto</a></li>
+      <nav>
+        <ul id="navigation-panel">
+          <li><a href="#know-me" class="item">Conóceme</a></li>
+          <li><a href="#knowledges" class="item">Conocimientos</a></li>
+          <li><a href="#services" class="item">Servicios</a></li>
+          <li><a href="#activities" class="item">Actividades</a></li>
+          <li><a href="#contact-me" class="item">Contacto</a></li>
         </ul>
       </nav>
 
@@ -60,32 +60,6 @@
             Tengo más de <b class="emphasis-subject">6 años de experiencia</b> desarrollando <b class="emphasis-subject">aplicaciones de escritorio</b>, <b class="emphasis-subject">móviles</b> y <b class="emphasis-subject">páginas web</b>.
           </p>
         </article>
-
-      </section>
-
-      <section id="knowledges">
-
-        <h2 class="title">Conocimientos</h2>
-
-        <ul class="items">
-
-          <li>
-            <ahc-icon src="/img/ico-html.svg" class="item"/>
-          </li>
-
-          <li>
-            <ahc-icon src="/img/ico-css.svg" class="item"/>
-          </li>
-
-          <li>
-            <ahc-icon src="/img/ico-js.svg" class="item"/>
-          </li>
-
-          <li>
-            <ahc-icon src="/img/ico-git.svg" class="item"/>
-          </li>
-
-        </ul>
 
       </section>
 
@@ -128,12 +102,50 @@
 
       </section>
 
-      <section id="activities">
-        <h2 class="title">Actividades</h2>
+      <section id="knowledges">
+
+        <h2 class="title">Conocimientos</h2>
+
+        <ul class="items">
+
+          <li>
+            <ahc-icon src="/img/ico-html.svg" class="item"/>
+          </li>
+
+          <li>
+            <ahc-icon src="/img/ico-css.svg" class="item"/>
+          </li>
+
+          <li>
+            <ahc-icon src="/img/ico-js.svg" class="item"/>
+          </li>
+
+          <li>
+            <ahc-icon src="/img/ico-git.svg" class="item"/>
+          </li>
+
+        </ul>
+
       </section>
 
+      <!-- <section id="activities">
+        <h2 class="title">Actividades</h2>
+      </section> -->
+
       <section id="contact-me">
+
         <h2 class="title">Contáctame</h2>
+
+          <ul class="contacts">
+            <li>
+              <a href="https://wa.me/+528991902648" class="media">
+                <div class="image">
+                  <ahc-icon src="./img/ico-whatsapp.svg"/>
+                </div>
+                <p class="caption">WhatsApp</p>
+              </a>
+            </li>
+          </ul>
       </section>
 
     </main>

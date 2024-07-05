@@ -1,3 +1,231 @@
-@import './common/launcher.css';
-@import './mobile/launcher.css' screen and (max-width: 991px);
-@import './desktop/launcher.css' screen and (min-width: 992px);
+/* COMMON FONTS */
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('../fonts/Roboto/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Black Italic';
+    src: url('../fonts/Roboto/Roboto-BlackItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Black';
+    src: url('../fonts/Roboto/Roboto-Black.ttf') format('truetype');
+}
+
+/* COMMON THEME*/
+
+:root {
+    --hue: 100;
+    --sat: 45%;
+
+    --theme-05-percent: hsl(var(--hue), var(--sat), 5%);
+    --theme-15-percent: hsl(var(--hue), var(--sat), 15%);
+    --theme-25-percent: hsl(var(--hue), var(--sat), 25%);
+    --theme-35-percent: hsl(var(--hue), var(--sat), 35%);
+    --theme-45-percent: hsl(var(--hue), var(--sat), 45%);
+    --theme-50-percent: hsl(var(--hue), var(--sat), 50%);
+    --theme-65-percent: hsl(var(--hue), var(--sat), 65%);
+    --theme-75-percent: hsl(var(--hue), var(--sat), 75%);
+    --theme-85-percent: hsl(var(--hue), var(--sat), 85%);
+    --theme-95-percent: hsl(var(--hue), var(--sat), 95%);
+
+    background: var(--theme-85-percent);
+    color: var(--theme-15-percent);
+
+    font-family: 'Roboto Light';
+}
+
+/* COMMON GENERAL */
+
+body
+{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-areas: 'header main';
+    grid-template-rows: auto auto;
+}
+
+header
+{
+    display: flex;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    grid-area: 'header';
+}
+
+main
+{
+    grid-area: 'main';
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+section:not(#know-me)
+{
+  margin-top: 100px;
+}
+
+section > .title
+{
+    margin-bottom: 50px;
+}
+
+/* COMMON TEXT FORMATTING */
+  
+mark {
+    font-family: 'Roboto Black Italic';
+    font-size: 1.25em;
+
+    background: none;
+    color: var(--theme-25-percent);
+}
+
+.title
+{
+    font-family: 'Roboto Black';
+    color: var(--theme-05-percent);
+    font-size: 2rem;
+}
+
+main #know-me .description .title {
+    text-align: right;
+}
+
+main #know-me .description .content {
+    text-align: justify;
+}
+
+/* COMMON ROUNDED BUTTON */
+
+.rounded-button
+{
+    background: var(--theme-50-percent);
+    color: var(--theme-95-percent);
+
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25em;
+    display: inline-block;
+    transition: all 500ms;
+    justify-self: center;
+    box-shadow: 2px 2px 5px var(--theme-05-percent);
+}
+
+.rounded-button:hover
+{
+    background: var(--theme-75-percent);
+    transform: scale(1.1);
+}
+
+/* COMMON HEADER */
+
+header > div
+{
+    display: grid;
+    margin-right: 10px;
+    padding: 0;
+}
+
+header > div > button
+{
+    background-color: transparent;
+    border: none;
+    height: 3rem;
+    padding: 0;
+    grid-area: 1/1;
+}
+
+header #close-menu
+{
+    display: none;
+    margin-left: 5px;
+}
+
+header > nav
+{
+    display: none;
+    background-color: var(--theme-15-percent);
+    border-radius: 10%;
+    padding: 20px;
+}
+
+header > nav > ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header > nav a
+{
+    display: block;
+    text-decoration: none;
+    color: var(--theme-95-percent);
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+header > nav a:hover
+{
+    background-color: var(--theme-45-percent);
+}
+
+/* COMMON KNOWLEDGE */
+
+main #knowledges .items {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+main #knowledges .items .item {
+    display: inline-block;
+    height: 5rem;
+}
+
+/* SERVICES */
+
+.services
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.service
+{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--theme-95-percent);
+    padding: 20px;
+    border-radius: 5vmin;
+    box-shadow: 0px 0px 5px var(--theme-50-percent);
+}
+
+.service:not(:first-child)
+{
+    margin-top: 25px;
+}
+
+.service > .description
+{
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+/* @import './desktop/launcher.css' screen and (min-width: 992px); */

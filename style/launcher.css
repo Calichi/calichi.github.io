@@ -65,7 +65,7 @@ main
 {
     grid-area: 'main';
     padding-left: 25px;
-    padding-right: 10px;
+    padding-right: 15px;
 }
 
 section:not(#know-me)
@@ -79,20 +79,39 @@ section > .title
 }
 
 /* COMMON TEXT FORMATTING */
-  
-mark {
-    font-family: 'Roboto Black Italic';
-    font-size: 1.25em;
 
-    background: none;
+.emphasis-subject
+{
+    display: inline-block;
+    font-family: 'Roboto Black';
+    color: var(--theme-15-percent);
+}
+
+.emphasis-predicate
+{
+    display: inline-block;
+    font-family: 'Roboto Black';
     color: var(--theme-25-percent);
+}
+
+.label-subject
+{
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 3px;
+    font-family: 'Roboto Black';
+    background-color: var(--theme-65-percent);
+    box-shadow: 0px 0px 5px var(--theme-35-percent);
+    color: var(--theme-15-percent);
+    border-radius: 0.50rem;
+    padding: 4px 10px;
 }
 
 .title
 {
     font-family: 'Roboto Black';
     color: var(--theme-05-percent);
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 main #know-me .description .title {
@@ -126,7 +145,7 @@ main #know-me .description .content {
     transform: scale(1.1);
 }
 
-/* COMMON HEADER */
+/* HEADER */
 
 header > div
 {
@@ -154,7 +173,8 @@ header > nav
 {
     display: none;
     background-color: var(--theme-25-percent);
-    border-radius: 10%;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px var(--theme-05-percent);
     padding: 20px;
 }
 
@@ -182,7 +202,38 @@ header > nav a:hover
     background-color: var(--theme-45-percent);
 }
 
-/* COMMON KNOWLEDGE */
+/* KNOW-ME */
+
+#know-me
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-photo
+{
+    align-self: end;
+}
+
+#know-me > .description h1
+{
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+#know-me > .description h2
+{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#know-me > .description p
+{
+    font-family: "Roboto light";
+    font-size: 0.9rem;
+}
+
+/* KNOWLEDGE */
 
 main #knowledges .items {
     display: flex;
@@ -211,10 +262,10 @@ main #knowledges .items .item {
 {
     display: flex;
     flex-direction: column;
-    background-color: var(--theme-95-percent);
+    background-color: var(--theme-75-percent);
     padding: 20px;
     border-radius: 5vmin;
-    box-shadow: 0px 0px 5px var(--theme-50-percent);
+    box-shadow: 0px 0px 5px var(--theme-45-percent);
 }
 
 .service:not(:first-child)
@@ -224,7 +275,8 @@ main #knowledges .items .item {
 
 .service > .description
 {
-    font-size: 1.5rem;
+    font-family: "Roboto light";
+    font-size: 1.25rem;
     text-align: right;
 }
 

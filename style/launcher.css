@@ -198,7 +198,6 @@ header #navigation-panel
     border-radius: 1rem;
     background-color: hsla(var(--hue), var(--sat), 25%, 45%);
     box-shadow: 0px 0px 10px var(--theme-25-percent);
-    backdrop-filter: blur(10px);
 }
 
 header #navigation-panel .item
@@ -285,10 +284,12 @@ main #knowledges .items .item {
 {
     display: flex;
     flex-direction: column;
-    background-color: var(--theme-75-percent);
+    background-color: hsla(var(--hue), var(--sat), 75%, 35%);
+    backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 5vmin;
     box-shadow: 0px 0px 5px var(--theme-45-percent);
+    z-index: -1;
 }
 
 .service:not(:first-child)
@@ -318,7 +319,8 @@ main #knowledges .items .item {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color: var(--theme-75-percent);
+    background-color: hsla(var(--hue), var(--sat), 75%, 35%);
+    backdrop-filter: blur(10px);
     padding: 40px;
     border-radius: 0.5rem;
     box-shadow: inset 0px 0px 5px var(--theme-45-percent);
@@ -372,6 +374,11 @@ main #knowledges .items .item {
     font-family: "Roboto Black";
     color: var(--theme-15-percent);
     font-size: 1.5rem;
+}
+
+header #navigation-panel
+{
+    backdrop-filter: blur(10px);
 }
 
 /* @import './desktop/launcher.css' screen and (min-width: 992px); */

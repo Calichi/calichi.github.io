@@ -38,70 +38,6 @@
     font-family: 'Roboto Light';
 }
 
-/* COMMON GENERAL */
-
-body
-{
-    display: grid;
-    margin: 0;
-    padding: 0;
-    grid-template-areas: 'header main';
-    grid-template-rows: auto auto;
-    background-image: url(../img/background.svg);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
-
-header
-{
-    display: flex;
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    flex-direction: row;
-    align-items: center;
-    background-color: transparent;
-    grid-area: 'header';
-    z-index: 2;
-}
-
-main
-{
-    grid-area: 'main';
-    /* padding-left: 25px;
-    padding-right: 15px; */
-}
-
-section
-{
-    padding-left: 25px;
-    padding-right: 15px;
-}
-
-section:not(#know-me)
-{
-  margin-top: 100px;
-}
-
-section > .title
-{
-    margin-bottom: 100px;
-}
-
-a
-{
-    text-decoration: none;
-}
-
-ul
-{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
 /* COMMON TEXT FORMATTING */
 
 .emphasis-subject
@@ -164,6 +100,65 @@ ul
 {
     background: var(--theme-75-percent);
     transform: scale(1.1);
+}
+
+/* COMMON GENERAL */
+
+body
+{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-areas: 'header main';
+    background-image: url(../img/background.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header
+{
+    display: flex;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    grid-area: header;
+    z-index: 2;
+}
+
+main
+{
+    grid-area: main;
+    /* padding-left: 25px;
+    padding-right: 15px; */
+}
+
+section
+{
+    padding-left: 25px;
+    padding-right: 15px;
+    margin-top: 100px;
+}
+
+section > .title
+{
+    margin-bottom: 100px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* HEADER */
@@ -296,11 +291,7 @@ main #knowledges .items .item {
     box-shadow: 0px 0px 5px var(--theme-45-percent);
     background-color: hsla(var(--hue), var(--sat), 75%, 35%);
     backdrop-filter: blur(2px);
-}
-
-.service:not(:first-child)
-{
-    margin-top: 25px;
+    margin: 20px 0px;
 }
 
 .service > .description
@@ -320,21 +311,17 @@ main #knowledges .items .item {
     align-items: center;
 }
 
-#knowledges .group
+#knowledges .items
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     background-color: hsla(var(--hue), var(--sat), 75%, 35%);
     backdrop-filter: blur(2px);
     padding: 40px;
     border-radius: 0.5rem;
     box-shadow: inset 0px 0px 5px var(--theme-45-percent);
-}
-
-#knowledges .group:not(:last-child)
-{
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .knowledge
@@ -346,6 +333,11 @@ main #knowledges .items .item {
     background-color: var(--theme-15-percent);
     text-shadow: 0 0 0.15rem var(--theme-95-percent);
     box-shadow: 0 0 0.2rem var(--theme-15-percent);
+}
+
+#knowledges .group-name
+{
+    text-align: center;
 }
 
 /* CONTACT-ME */
@@ -380,4 +372,137 @@ main #knowledges .items .item {
     font-family: "Roboto Black";
     color: var(--theme-15-percent);
     font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px)
+{
+    body
+    {
+        grid-template-areas: 'header'
+                             'main';
+        background-image: url(../img/background-desktop.svg);
+    }
+
+    section
+    {
+        padding: 0 10vw;
+    }
+
+    /* HEADER */
+
+    header .visibility-buttons
+    {
+        display: none;
+    }
+
+    header
+    {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    header #navigation-panel
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border-radius: 0;
+        justify-content: center;
+    }
+
+    header #navigation-panel .item
+    {
+        margin: 0px 20px;
+    }
+
+    /* KNOW-ME */
+
+    #know-me
+    {
+        display: grid;
+        grid-template-areas: 'title title'
+                             'photo description';
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    #know-me .title
+    {
+        grid-area: title;
+    }
+
+    #know-me .profile-photo
+    {
+        grid-area: photo;
+    }
+
+    #know-me .description
+    {
+        grid-area: description;
+    }
+
+    #know-me .description h1
+    {
+        text-align: start;
+    }
+
+    #know-me .description p
+    {
+        margin-left: 20vw;
+        text-align: right;
+    }
+
+    /* SERVICE */
+
+    .services
+    {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .service
+    {
+        flex-grow: 1;
+        flex-basis: 100px;
+        display: grid;
+        margin: 15px;
+        justify-content: start;
+    }
+
+    .service .image
+    {
+        align-self: stretch;
+        justify-self: stretch;
+    }
+
+    .service .description
+    {
+        align-self: stretch;
+        justify-self: stretch;
+        text-align: center;
+    }
+
+    /* KNOWLEDGE */
+
+    #knowledges .panel
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #knowledges .group
+    {
+        flex-grow: 1;
+        flex-basis: 400px;
+        margin: 15px;
+    }
+
+    #knowledges .group-name
+    {
+        align-self: end;
+    }
 }

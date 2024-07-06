@@ -28,6 +28,7 @@
     --theme-45-percent: hsl(var(--hue), var(--sat), 45%);
     --theme-50-percent: hsl(var(--hue), var(--sat), 50%);
     --theme-65-percent: hsl(var(--hue), var(--sat), 65%);
+    --theme-70-percent: hsl(var(--hue), var(--sat), 70%);
     --theme-75-percent: hsl(var(--hue), var(--sat), 75%);
     --theme-85-percent: hsl(var(--hue), var(--sat), 85%);
     --theme-95-percent: hsl(var(--hue), var(--sat), 95%);
@@ -146,7 +147,7 @@ section
 
 section > .title
 {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 a
@@ -227,6 +228,7 @@ header #navigation-panel .item:hover
 {
     display: flex;
     flex-direction: column;
+    margin-top: 0;
 }
 
 .profile-photo
@@ -306,33 +308,38 @@ main #knowledges .items .item {
 
 #knowledges .panel
 {
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
+}
+
+#knowledges .group
+{
+    margin: 15px;
+    margin-bottom: 30px;
 }
 
 #knowledges .items
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     background-color: hsla(var(--hue), var(--sat), 75%, 35%);
     backdrop-filter: blur(2px);
-    padding: 40px;
+    padding: 10px;
     border-radius: 0.5rem;
     box-shadow: inset 0px 0px 5px var(--theme-45-percent);
-    /* margin-bottom: 50px; */
 }
 
 .knowledge
 {
-    margin-left: 10px;
     padding: 6px 12px;
     border-radius: 0.5rem;
     color: var(--theme-85-percent);
     background-color: var(--theme-15-percent);
     text-shadow: 0 0 0.15rem var(--theme-95-percent);
     box-shadow: 0 0 0.2rem var(--theme-15-percent);
+    margin: 10px;
 }
 
 #knowledges .group-name
@@ -425,6 +432,7 @@ main #knowledges .items .item {
                              'photo description';
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
+        margin-top: 80px;
     }
 
     #know-me .title
@@ -489,6 +497,7 @@ main #knowledges .items .item {
 
     #knowledges .panel
     {
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
@@ -498,7 +507,6 @@ main #knowledges .items .item {
     {
         flex-grow: 1;
         flex-basis: 400px;
-        margin: 15px;
     }
 
     #knowledges .group-name

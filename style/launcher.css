@@ -324,6 +324,7 @@ main #knowledges .items .item {
     padding: 40px;
     border-radius: 0.5rem;
     box-shadow: inset 0px 0px 5px var(--theme-45-percent);
+    z-index: -1;
 }
 
 #knowledges .group:not(:last-child)

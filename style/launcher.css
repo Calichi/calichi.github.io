@@ -178,6 +178,12 @@ header .visibility-buttons .button
     grid-area: 1/1;
 }
 
+header .visibility-buttons .icon
+{
+    filter: drop-shadow(0 0 0.3rem var(--theme-25-percent));
+    backdrop-filter: blur(10px);
+}
+
 header #hidden-button
 {
     display: none;
@@ -190,8 +196,9 @@ header #navigation-panel
     flex-direction: column;
     padding: 20px;
     border-radius: 1rem;
-    background-color: var(--theme-25-percent);
-    box-shadow: 0px 0px 10px var(--theme-05-percent);
+    background-color: hsla(var(--hue), var(--sat), 25%, 45%);
+    box-shadow: 0px 0px 10px var(--theme-25-percent);
+    backdrop-filter: blur(10px);
 }
 
 header #navigation-panel .item
@@ -204,11 +211,13 @@ header #navigation-panel .item
     text-align: center;
     margin-top: 5px;
     margin-bottom: 5px;
+    border-radius: 0.25rem;
+    text-shadow: 0 0 0.2rem var(--theme-25-percent);
 }
 
 header #navigation-panel .item:hover
 {
-    background-color: var(--theme-45-percent);
+    background-color: hsla(var(--hue), var(--sat), 25%, 30%);
 }
 
 /* KNOW-ME */
